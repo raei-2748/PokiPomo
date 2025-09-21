@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		71CA5CBB2E7E8D5800F9A82C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71CA5CA52E7E8D5600F9A82C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71CA5CAC2E7E8D5600F9A82C;
+			remoteInfo = PokiPomo;
+		};
+		71CA5CC52E7E8D5800F9A82C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71CA5CA52E7E8D5600F9A82C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71CA5CAC2E7E8D5600F9A82C;
+			remoteInfo = PokiPomo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71CA5CAD2E7E8D5600F9A82C /* PokiPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokiPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CA5CBA2E7E8D5800F9A82C /* PokiPomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokiPomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CA5CC42E7E8D5800F9A82C /* PokiPomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokiPomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		71CA5CAF2E7E8D5600F9A82C /* PokiPomo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PokiPomo;
+			sourceTree = "<group>";
+		};
+		71CA5CBD2E7E8D5800F9A82C /* PokiPomoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PokiPomoTests;
+			sourceTree = "<group>";
+		};
+		71CA5CC72E7E8D5800F9A82C /* PokiPomoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PokiPomoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71CA5CAA2E7E8D5600F9A82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CA5CB72E7E8D5800F9A82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CA5CC12E7E8D5800F9A82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71CA5CA42E7E8D5600F9A82C = {
+			isa = PBXGroup;
+			children = (
+				71CA5CAF2E7E8D5600F9A82C /* PokiPomo */,
+				71CA5CBD2E7E8D5800F9A82C /* PokiPomoTests */,
+				71CA5CC72E7E8D5800F9A82C /* PokiPomoUITests */,
+				71CA5CAE2E7E8D5600F9A82C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71CA5CAE2E7E8D5600F9A82C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71CA5CAD2E7E8D5600F9A82C /* PokiPomo.app */,
+				71CA5CBA2E7E8D5800F9A82C /* PokiPomoTests.xctest */,
+				71CA5CC42E7E8D5800F9A82C /* PokiPomoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71CA5CAC2E7E8D5600F9A82C /* PokiPomo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CA5CCE2E7E8D5800F9A82C /* Build configuration list for PBXNativeTarget "PokiPomo" */;
+			buildPhases = (
+				71CA5CA92E7E8D5600F9A82C /* Sources */,
+				71CA5CAA2E7E8D5600F9A82C /* Frameworks */,
+				71CA5CAB2E7E8D5600F9A82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				71CA5CAF2E7E8D5600F9A82C /* PokiPomo */,
+			);
+			name = PokiPomo;
+			packageProductDependencies = (
+			);
+			productName = PokiPomo;
+			productReference = 71CA5CAD2E7E8D5600F9A82C /* PokiPomo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71CA5CB92E7E8D5800F9A82C /* PokiPomoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CA5CD12E7E8D5800F9A82C /* Build configuration list for PBXNativeTarget "PokiPomoTests" */;
+			buildPhases = (
+				71CA5CB62E7E8D5800F9A82C /* Sources */,
+				71CA5CB72E7E8D5800F9A82C /* Frameworks */,
+				71CA5CB82E7E8D5800F9A82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71CA5CBC2E7E8D5800F9A82C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				71CA5CBD2E7E8D5800F9A82C /* PokiPomoTests */,
+			);
+			name = PokiPomoTests;
+			packageProductDependencies = (
+			);
+			productName = PokiPomoTests;
+			productReference = 71CA5CBA2E7E8D5800F9A82C /* PokiPomoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71CA5CC32E7E8D5800F9A82C /* PokiPomoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CA5CD42E7E8D5800F9A82C /* Build configuration list for PBXNativeTarget "PokiPomoUITests" */;
+			buildPhases = (
+				71CA5CC02E7E8D5800F9A82C /* Sources */,
+				71CA5CC12E7E8D5800F9A82C /* Frameworks */,
+				71CA5CC22E7E8D5800F9A82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71CA5CC62E7E8D5800F9A82C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				71CA5CC72E7E8D5800F9A82C /* PokiPomoUITests */,
+			);
+			name = PokiPomoUITests;
+			packageProductDependencies = (
+			);
+			productName = PokiPomoUITests;
+			productReference = 71CA5CC42E7E8D5800F9A82C /* PokiPomoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71CA5CA52E7E8D5600F9A82C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					71CA5CAC2E7E8D5600F9A82C = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					71CA5CB92E7E8D5800F9A82C = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 71CA5CAC2E7E8D5600F9A82C;
+					};
+					71CA5CC32E7E8D5800F9A82C = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 71CA5CAC2E7E8D5600F9A82C;
+					};
+				};
+			};
+			buildConfigurationList = 71CA5CA82E7E8D5600F9A82C /* Build configuration list for PBXProject "PokiPomo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71CA5CA42E7E8D5600F9A82C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 71CA5CAE2E7E8D5600F9A82C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71CA5CAC2E7E8D5600F9A82C /* PokiPomo */,
+				71CA5CB92E7E8D5800F9A82C /* PokiPomoTests */,
+				71CA5CC32E7E8D5800F9A82C /* PokiPomoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71CA5CAB2E7E8D5600F9A82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CA5CB82E7E8D5800F9A82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CA5CC22E7E8D5800F9A82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71CA5CA92E7E8D5600F9A82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CA5CB62E7E8D5800F9A82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CA5CC02E7E8D5800F9A82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71CA5CBC2E7E8D5800F9A82C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71CA5CAC2E7E8D5600F9A82C /* PokiPomo */;
+			targetProxy = 71CA5CBB2E7E8D5800F9A82C /* PBXContainerItemProxy */;
+		};
+		71CA5CC62E7E8D5800F9A82C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71CA5CAC2E7E8D5600F9A82C /* PokiPomo */;
+			targetProxy = 71CA5CC52E7E8D5800F9A82C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		71CA5CCC2E7E8D5800F9A82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AQ8NV36N33;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71CA5CCD2E7E8D5800F9A82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AQ8NV36N33;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71CA5CCF2E7E8D5800F9A82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ8NV36N33;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ray.PokiPomo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71CA5CD02E7E8D5800F9A82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ8NV36N33;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ray.PokiPomo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71CA5CD22E7E8D5800F9A82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ8NV36N33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ray.PokiPomoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokiPomo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokiPomo";
+			};
+			name = Debug;
+		};
+		71CA5CD32E7E8D5800F9A82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ8NV36N33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ray.PokiPomoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokiPomo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokiPomo";
+			};
+			name = Release;
+		};
+		71CA5CD52E7E8D5800F9A82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ8NV36N33;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ray.PokiPomoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PokiPomo;
+			};
+			name = Debug;
+		};
+		71CA5CD62E7E8D5800F9A82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ8NV36N33;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ray.PokiPomoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PokiPomo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71CA5CA82E7E8D5600F9A82C /* Build configuration list for PBXProject "PokiPomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CA5CCC2E7E8D5800F9A82C /* Debug */,
+				71CA5CCD2E7E8D5800F9A82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71CA5CCE2E7E8D5800F9A82C /* Build configuration list for PBXNativeTarget "PokiPomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CA5CCF2E7E8D5800F9A82C /* Debug */,
+				71CA5CD02E7E8D5800F9A82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71CA5CD12E7E8D5800F9A82C /* Build configuration list for PBXNativeTarget "PokiPomoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CA5CD22E7E8D5800F9A82C /* Debug */,
+				71CA5CD32E7E8D5800F9A82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71CA5CD42E7E8D5800F9A82C /* Build configuration list for PBXNativeTarget "PokiPomoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CA5CD52E7E8D5800F9A82C /* Debug */,
+				71CA5CD62E7E8D5800F9A82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71CA5CA52E7E8D5600F9A82C /* Project object */;
+}
