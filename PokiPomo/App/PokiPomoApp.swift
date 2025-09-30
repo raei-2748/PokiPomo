@@ -65,6 +65,10 @@ extension PokiPomoApp {
             .onChange(of: focusTimerViewModel.urgeSurfMode) { newValue in
                 handleUrgeSurfModeChange(newValue)
             }
+            .onChange(of: onboardingViewModel.hasCompletedOnboarding) { completed in
+                guard completed else { return }
+                selectedTab = .focus
+            }
         }
 
         private var selectionBinding: Binding<Tab> {
@@ -101,4 +105,3 @@ extension PokiPomoApp {
         }
     }
 }
-

@@ -54,25 +54,58 @@ struct OnboardingView: View {
 
         case .screenTime:
             VStack(spacing: 20) {
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.green.opacity(0.2))
-                    .frame(height: 160)
-                    .overlay {
-                        Text("Screen Time Placeholder")
-                            .font(.headline)
-                            .foregroundStyle(.green)
-                    }
-
-                Slider(value: $viewModel.dailyScreenTime, in: 0.5...8, step: 0.5)
-
-                Text(
-                    "Estimated daily screen time: " +
-                    (viewModel.dailyScreenTime >= 8
-                     ? "8+ hrs"
-                     : "\(viewModel.dailyScreenTime.formatted(.number.precision(.fractionLength(1)))) hrs")
-                )
+                Text("Twist the dial to match the screen time that feels closest.")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
+
+                Picker("Daily screen time", selection: $viewModel.dailyScreenTime) {
+                    ForEach(viewModel.screenTimeOptions, id: \.self) { value in
+                        Text(viewModel.screenTimeLabel(for: value))
+                            .tag(value)
+                    }
+                }
+                .pickerStyle(.wheel)
+                .frame(maxHeight: 180)
+
+                Text("Estimated daily screen time: \(viewModel.screenTimeLabel(for: viewModel.dailyScreenTime))")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            }
+
+        case .doomscrollReflection:
+            ScrollView {
+                VStack(spacing: 12) {
+                    ForEach(viewModel.doomscrollFeelingOptions) { option in
+                        Button {
+                            viewModel.doomscrollFeeling = option
+                        } label: {
+                            HStack(alignment: .center, spacing: 12) {
+                                Text(option.rawValue)
+                                    .font(.body)
+                                    .multilineTextAlignment(.leading)
+
+                                Spacer()
+
+                                if viewModel.doomscrollFeeling == option {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundStyle(.green)
+                                }
+                            }
+                            .padding()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        .buttonStyle(.plain)
+                        .background {
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(viewModel.doomscrollFeeling == option ? Color.green.opacity(0.15) : Color(.secondarySystemBackground))
+                        }
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 16)
+                                .strokeBorder(viewModel.doomscrollFeeling == option ? Color.green : Color.clear, lineWidth: 1)
+                        }
+                    }
+                }
+                .padding(.vertical)
             }
 
         case .goal:
