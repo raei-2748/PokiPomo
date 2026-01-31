@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		714B6C502F270120004EE88A /* PokiPomo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokiPomo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		714B6C5D2F270122004EE88A /* PokiPomo AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PokiPomo AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		714B6C672F270122004EE88A /* PokiPomo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PokiPomo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		714B6C502F270120004EE88A /* PokiPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokiPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		714B6C5D2F270122004EE88A /* PokiPomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokiPomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		714B6C672F270122004EE88A /* PokiPomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokiPomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -85,9 +85,9 @@
 		714B6C512F270120004EE88A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				714B6C502F270120004EE88A /* PokiPomo App.app */,
-				714B6C5D2F270122004EE88A /* PokiPomo AppTests.xctest */,
-				714B6C672F270122004EE88A /* PokiPomo AppUITests.xctest */,
+				714B6C502F270120004EE88A /* PokiPomo.app */,
+				714B6C5D2F270122004EE88A /* PokiPomoTests.xctest */,
+				714B6C672F270122004EE88A /* PokiPomoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		714B6C4F2F270120004EE88A /* PokiPomo App */ = {
+		714B6C4F2F270120004EE88A /* PokiPomo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 714B6C712F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomo App" */;
+			buildConfigurationList = 714B6C712F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomo" */;
 			buildPhases = (
 				714B6C4C2F270120004EE88A /* Sources */,
 				714B6C4D2F270120004EE88A /* Frameworks */,
@@ -110,16 +110,16 @@
 			fileSystemSynchronizedGroups = (
 				714B6C522F270120004EE88A /* PokiPomo App */,
 			);
-			name = "PokiPomo App";
+			name = PokiPomo;
 			packageProductDependencies = (
 			);
 			productName = "PokiPomo App";
-			productReference = 714B6C502F270120004EE88A /* PokiPomo App.app */;
+			productReference = 714B6C502F270120004EE88A /* PokiPomo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		714B6C5C2F270122004EE88A /* PokiPomo AppTests */ = {
+		714B6C5C2F270122004EE88A /* PokiPomoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 714B6C742F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomo AppTests" */;
+			buildConfigurationList = 714B6C742F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomoTests" */;
 			buildPhases = (
 				714B6C592F270122004EE88A /* Sources */,
 				714B6C5A2F270122004EE88A /* Frameworks */,
@@ -133,16 +133,16 @@
 			fileSystemSynchronizedGroups = (
 				714B6C602F270122004EE88A /* PokiPomo AppTests */,
 			);
-			name = "PokiPomo AppTests";
+			name = PokiPomoTests;
 			packageProductDependencies = (
 			);
 			productName = "PokiPomo AppTests";
-			productReference = 714B6C5D2F270122004EE88A /* PokiPomo AppTests.xctest */;
+			productReference = 714B6C5D2F270122004EE88A /* PokiPomoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		714B6C662F270122004EE88A /* PokiPomo AppUITests */ = {
+		714B6C662F270122004EE88A /* PokiPomoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 714B6C772F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomo AppUITests" */;
+			buildConfigurationList = 714B6C772F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomoUITests" */;
 			buildPhases = (
 				714B6C632F270122004EE88A /* Sources */,
 				714B6C642F270122004EE88A /* Frameworks */,
@@ -156,11 +156,11 @@
 			fileSystemSynchronizedGroups = (
 				714B6C6A2F270122004EE88A /* PokiPomo AppUITests */,
 			);
-			name = "PokiPomo AppUITests";
+			name = PokiPomoUITests;
 			packageProductDependencies = (
 			);
 			productName = "PokiPomo AppUITests";
-			productReference = 714B6C672F270122004EE88A /* PokiPomo AppUITests.xctest */;
+			productReference = 714B6C672F270122004EE88A /* PokiPomoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 714B6C4B2F270120004EE88A /* Build configuration list for PBXProject "PokiPomo App" */;
+			buildConfigurationList = 714B6C4B2F270120004EE88A /* Build configuration list for PBXProject "PokiPomo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				714B6C4F2F270120004EE88A /* PokiPomo App */,
-				714B6C5C2F270122004EE88A /* PokiPomo AppTests */,
-				714B6C662F270122004EE88A /* PokiPomo AppUITests */,
+				714B6C4F2F270120004EE88A /* PokiPomo */,
+				714B6C5C2F270122004EE88A /* PokiPomoTests */,
+				714B6C662F270122004EE88A /* PokiPomoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		714B6C5F2F270122004EE88A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 714B6C4F2F270120004EE88A /* PokiPomo App */;
+			target = 714B6C4F2F270120004EE88A /* PokiPomo */;
 			targetProxy = 714B6C5E2F270122004EE88A /* PBXContainerItemProxy */;
 		};
 		714B6C692F270122004EE88A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 714B6C4F2F270120004EE88A /* PokiPomo App */;
+			target = 714B6C4F2F270120004EE88A /* PokiPomo */;
 			targetProxy = 714B6C682F270122004EE88A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -472,7 +472,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokiPomo App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokiPomo App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokiPomo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokiPomo";
 			};
 			name = Debug;
 		};
@@ -494,7 +494,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokiPomo App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokiPomo App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokiPomo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokiPomo";
 			};
 			name = Release;
 		};
@@ -541,7 +541,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		714B6C4B2F270120004EE88A /* Build configuration list for PBXProject "PokiPomo App" */ = {
+		714B6C4B2F270120004EE88A /* Build configuration list for PBXProject "PokiPomo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				714B6C6F2F270122004EE88A /* Debug */,
@@ -550,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		714B6C712F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomo App" */ = {
+		714B6C712F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				714B6C722F270122004EE88A /* Debug */,
@@ -559,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		714B6C742F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomo AppTests" */ = {
+		714B6C742F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				714B6C752F270122004EE88A /* Debug */,
@@ -568,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		714B6C772F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomo AppUITests" */ = {
+		714B6C772F270122004EE88A /* Build configuration list for PBXNativeTarget "PokiPomoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				714B6C782F270122004EE88A /* Debug */,
