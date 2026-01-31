@@ -11,25 +11,33 @@ struct CompletionView: View {
     @ObservedObject var viewModel: TimerViewModel
     @State private var deliverableChecked: Bool = false
     @State private var showReflection: Bool = false
+    @State private var animateIn: Bool = false
     
     var body: some View {
         ZStack {
             Color.appBackground
                 .ignoresSafeArea()
-            
+
+            // Subtle theater background for celebration
+            Image("theater_scene")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .ignoresSafeArea()
+                .opacity(0.12)
+                .blur(radius: 2)
+
             VStack(spacing: 32) {
                 Spacer()
-                
-                // Cat mascot placeholder
-                ZStack {
-                    Circle()
-                        .fill(Color.appCream.opacity(0.1))
-                        .frame(width: 160, height: 160)
-                    
-                    Image(systemName: "cat.fill")
-                        .font(.system(size: 80))
-                        .foregroundColor(.appCoral)
-                }
+
+                // Cat mascot with animation
+                Image("cat_mascot")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 180)
+                    .clipShape(RoundedRectangle(cornerRadius: 24))
+                    .scaleEffect(animateIn ? 1.0 : 0.5)
+                    .opacity(animateIn ? 1.0 : 0)
+                    .animation(.spring(response: 0.6, dampingFraction: 0.7), value: animateIn)
                 
                 // Completion message
                 VStack(spacing: 12) {
@@ -86,6 +94,9 @@ struct CompletionView: View {
         }
         .sheet(isPresented: $showReflection) {
             ReflectionView(viewModel: viewModel)
+        }
+        .onAppear {
+            animateIn = true
         }
     }
 }

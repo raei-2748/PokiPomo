@@ -23,12 +23,14 @@ struct HomeView: View {
             VStack(spacing: 32) {
                 Spacer()
                 
-                // Header
+                // Header with mascot
                 VStack(spacing: 8) {
-                    Image(systemName: "cat.fill")
-                        .font(.system(size: 60))
-                        .foregroundColor(.appCoral)
-                    
+                    Image("cat_mascot")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 120)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+
                     Text("PokiPomo")
                         .font(.system(.largeTitle, design: .rounded, weight: .medium))
                         .foregroundColor(.appCream)
