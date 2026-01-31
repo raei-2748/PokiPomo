@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  PokiPomo App
-//
-//  Created by Ray Wang on 1/31/26.
-//
-
 import SwiftUI
 
 struct HomeView: View {
@@ -16,92 +9,161 @@ struct HomeView: View {
     private let durations = [20, 35, 50]
     
     var body: some View {
-        ZStack {
-            Color.appBackground
-                .ignoresSafeArea()
-            
-            VStack(spacing: 32) {
-                Spacer()
-                
-                // Header with mascot
-                VStack(spacing: 8) {
-                    Image("cat_mascot")
+        ScrollView {
+            VStack(spacing: 0) {
+                // Theater Background Section
+                ZStack(alignment: .bottom) {
+                    Image("homepage_theater")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 120)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-
-                    Text("PokiPomo")
-                        .font(.system(.largeTitle, design: .rounded, weight: .medium))
-                        .foregroundColor(.appCream)
-                }
-                
-                Spacer()
-                
-                // Duration Selection
-                VStack(spacing: 16) {
-                    Text("Choose your focus time")
-                        .font(.system(.subheadline, design: .rounded, weight: .medium))
-                        .foregroundColor(.appCream.opacity(0.7))
+                        .frame(maxWidth: .infinity)
                     
-                    HStack(spacing: 16) {
-                        ForEach(durations, id: \.self) { duration in
-                            DurationButton(
-                                minutes: duration,
-                                isSelected: selectedDuration == duration
-                            ) {
-                                selectedDuration = duration
+                    // Gradient Mask for seamless blend
+                    LinearGradient(
+                        colors: [.appCream, .appCream.opacity(0)],
+                        startPoint: .bottom,
+                        endPoint: .center
+                    )
+                    .frame(height: 150)
+                    
+                    // Overlay content on theater image
+                    VStack(spacing: 32) {
+                        Spacer()
+                        
+                        // Duration Selection
+                        VStack(spacing: 20) {
+                            Text("Choose your focus time")
+                                .font(.system(.title3, design: .serif, weight: .bold)) // Serif font
+                                .foregroundColor(.appCream)
+                                .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 1)
+                            
+                            HStack(spacing: 20) {
+                                ForEach(durations, id: \.self) { duration in
+                                    DurationButton(
+                                        minutes: duration,
+                                        isSelected: selectedDuration == duration
+                                    ) {
+                                        selectedDuration = duration
+                                    }
+                                }
                             }
                         }
+                        
+                        // Task Name Input
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("Act I: The Task")
+                                .font(.system(.subheadline, design: .serif, weight: .semibold))
+                                .foregroundColor(.appCream)
+                                .shadow(color: .black.opacity(0.5), radius: 2, x: 0, y: 1)
+                            
+                            TextField("", text: $taskName, prompt: Text("Enter scene title (e.g. Study)")
+                                .foregroundColor(.appRed.opacity(0.6)))
+                                .font(.system(.body, design: .serif))
+                                .padding()
+                                .background(Color.appCream)
+                                .foregroundColor(.appRed) // Theater red text
+                                .cornerRadius(8) // Sharper corners for ticket look
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .stroke(Color.appGold, lineWidth: 2) // Gold border
+                                )
+                                .shadow(color: .black.opacity(0.3), radius: 4, x: 0, y: 2)
+                        }
+                        .padding(.horizontal, 32)
+                        
+                        // Start Button
+                        Button {
+                            viewModel.startSession(minutes: selectedDuration, taskName: taskName)
+                            showTimer = true
+                        } label: {
+                            HStack {
+                                Image(systemName: "curtains.closed")
+                                    .font(.system(size: 20))
+                                Text("Raise Curtain")
+                                    .font(.system(.title3, design: .serif, weight: .bold))
+                            }
+                            .foregroundColor(.appCream)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 18)
+                            .background(
+                                ZStack {
+                                    Color.appRed
+                                    RoundedRectangle(cornerRadius: 12)
+                                        .strokeBorder(Color.appGold, lineWidth: 3)
+                                }
+                            )
+                            .cornerRadius(12)
+                            .shadow(color: .black.opacity(0.4), radius: 4, x: 0, y: 3)
+                        }
+                        .padding(.horizontal, 32)
+                        .padding(.bottom, 60)
                     }
+                    .frame(maxWidth: .infinity)
                 }
                 
-                // Task Name Input
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("What are you working on? (optional)")
-                        .font(.system(.caption, design: .rounded, weight: .medium))
-                        .foregroundColor(.appCream.opacity(0.7))
+                // Cream Content Section
+                VStack(spacing: 24) {
+                    // Title for this section
+                    Text("Now Showing")
+                        .font(.system(.title2, design: .serif, weight: .bold))
+                        .foregroundColor(.appRed)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, 24)
                     
-                    TextField("", text: $taskName, prompt: Text("e.g. Math homework")
-                        .foregroundColor(.appBackground.opacity(0.5)))
-                    .font(.system(.body, design: .rounded))
-                    .padding()
-                    .background(Color.appCream)
-                    .foregroundColor(.appBackground)
-                    .cornerRadius(20)
+                    // Placeholder cards with "Playbill" style
+                    PlaceholderCard(title: "Statistics", subtitle: "Review your performance")
+                    PlaceholderCard(title: "Achievements", subtitle: "Your trophy room")
+                    PlaceholderCard(title: "Settings", subtitle: "Backstage preferences")
                 }
-                .padding(.horizontal, 24)
-                
-                Spacer()
-                
-                // Start Button
-                Button {
-                    viewModel.startSession(minutes: selectedDuration, taskName: taskName)
-                    showTimer = true
-                } label: {
-                    Text("Start Focus")
-                        .font(.system(.title3, design: .rounded, weight: .medium))
-                        .foregroundColor(.appBackground)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 20)
-                        .background(Color.appCream)
-                        .cornerRadius(20)
-                }
-                .padding(.horizontal, 24)
-                .padding(.bottom, 32)
+                .padding(.bottom, 40)
+                .frame(maxWidth: .infinity)
+                .background(Color.appCream)
             }
         }
+        .ignoresSafeArea(edges: .top)
+        .background(Color.appCream)
         .fullScreenCover(isPresented: $showTimer) {
             TimerView(viewModel: viewModel, isPresented: $showTimer)
         }
         .onAppear {
             selectedDuration = viewModel.lastSelectedDuration
-            
-            // Check if there's an active session to restore
             if viewModel.isTimerActive {
                 showTimer = true
             }
         }
+    }
+}
+
+// MARK: - Placeholder Card
+
+struct PlaceholderCard: View {
+    let title: String
+    let subtitle: String
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 6) {
+                Text(title)
+                    .font(.system(.headline, design: .serif, weight: .bold))
+                    .foregroundColor(.appRed)
+                Text(subtitle)
+                    .font(.system(.subheadline, design: .serif))
+                    .foregroundColor(.appBackground.opacity(0.7))
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundColor(.appGold)
+        }
+        .padding(24)
+        .background(Color.white)
+        .cornerRadius(4) // Paper-like sharp corners
+        .overlay(
+            RoundedRectangle(cornerRadius: 4)
+                .stroke(Color.black.opacity(0.1), lineWidth: 1)
+        )
+        // Add "ticket" notches effect using styling or keeping it simple as a playbill
+        .shadow(color: .black.opacity(0.05), radius: 2, x: 0, y: 1)
+        .padding(.horizontal, 24)
     }
 }
 
@@ -114,20 +176,22 @@ struct DurationButton: View {
     
     var body: some View {
         Button(action: action) {
-            VStack(spacing: 4) {
+            VStack(spacing: 2) {
                 Text("\(minutes)")
-                    .font(.system(.title, design: .rounded, weight: .medium))
-                Text("min")
-                    .font(.system(.caption, design: .rounded, weight: .medium))
+                    .font(.system(.title2, design: .serif, weight: .bold))
+                Text("MIN")
+                    .font(.system(.caption2, design: .serif, weight: .bold))
+                    .tracking(2) // Spaced out letters
             }
-            .foregroundColor(isSelected ? .appBackground : .appCream)
-            .frame(width: 80, height: 80)
-            .background(isSelected ? Color.appCream : Color.clear)
-            .cornerRadius(20)
+            .foregroundColor(isSelected ? .appRed : .appCream)
+            .frame(width: 70, height: 70) // Slights smaller for cleaner look
+            .background(isSelected ? Color.appGold : Color.black.opacity(0.4))
+            .cornerRadius(35) // Circle for seal look
             .overlay(
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color.appCream, lineWidth: isSelected ? 0 : 2)
+                Circle()
+                    .stroke(Color.appGold, lineWidth: isSelected ? 0 : 2)
             )
+            .shadow(color: isSelected ? .appGold.opacity(0.5) : .clear, radius: 8, x: 0, y: 0)
         }
     }
 }

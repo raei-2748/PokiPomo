@@ -12,6 +12,8 @@ extension Color {
     static let appBackground = Color(hex: "0D0D0D")
     static let appCream = Color(hex: "FFF8E7")
     static let appCoral = Color(hex: "FFB5A7")
+    static let appRed = Color(hex: "8B0000")
+    static let appGold = Color(hex: "FFD700")
     
     // MARK: - Hex Initializer
     init(hex: String) {
